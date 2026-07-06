@@ -1,0 +1,128 @@
+
+.page-header-inst {
+  background: linear-gradient(120deg, var(--ipf-navy) 0%, var(--ipf-navy-2) 70%);
+  color: #fff;
+  padding: 3.5rem 0;
+}
+
+.page-header-inst h1 {
+  color: #fff;
+}
+
+.page-header-inst .breadcrumb a {
+  color: #cfd8e6;
+}
+
+.page-header-inst .breadcrumb-item.active {
+  color: var(--ipf-gold);
+}
+
+/* -------------------- Línea de tiempo (reseña histórica) -------------------- */
+.timeline-ipf {
+  border-left: 3px solid var(--ipf-green);
+  padding-left: 1.75rem;
+  margin-left: 0.5rem;
+}
+
+.timeline-item {
+  position: relative;
+  padding-bottom: 2rem;
+}
+
+.timeline-item:last-child {
+  padding-bottom: 0;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -2.05rem;
+  top: 0.15rem;
+  width: 0.85rem;
+  height: 0.85rem;
+  border-radius: 50%;
+  background-color: var(--ipf-green);
+  border: 3px solid #fff;
+  box-shadow: 0 0 0 2px var(--ipf-green);
+}
+
+.timeline-item .timeline-year {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: var(--ipf-green-dark);
+}
+
+/* -------------------- Misión / Visión -------------------- */
+.mv-card {
+  background-color: var(--ipf-surface);
+  border-radius: 0.6rem;
+  padding: 2rem;
+  height: 100%;
+  border-top: 4px solid var(--ipf-navy);
+}
+
+.mv-card.vision {
+  border-top-color: var(--ipf-green);
+}
+
+.mv-card .mv-icon {
+  font-size: 1.8rem;
+  color: var(--ipf-navy);
+  margin-bottom: 0.75rem;
+}
+
+.mv-card.vision .mv-icon {
+  color: var(--ipf-green-dark);
+}
+
+/* -------------------- Autoridades -------------------- */
+.authority-card {
+  text-align: center;
+  padding: 1.75rem 1rem;
+  background-color: var(--ipf-surface);
+  border-radius: 0.6rem;
+  border: 1px solid var(--ipf-border);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.authority-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0.9rem 1.8rem rgba(20, 40, 80, 0.1);
+}
+
+.authority-avatar {
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+  background-color: var(--ipf-navy);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 1.4rem;
+  margin: 0 auto 1rem;
+}
+
+.authority-card .role-badge {
+  background-color: rgba(46, 139, 87, 0.12);
+  color: var(--ipf-green-dark);
+}
+
+/* -------------------- Estructura organizativa (accordion) -------------------- */
+.accordion-ipf .accordion-button {
+  font-weight: 600;
+  color: var(--ipf-navy);
+  background-color: var(--ipf-surface);
+}
+
+.accordion-ipf .accordion-button:not(.collapsed) {
+  background-color: rgba(46, 139, 87, 0.08);
+  color: var(--ipf-green-dark);
+  box-shadow: none;
+}
+
+.accordion-ipf .accordion-button:focus {
+  box-shadow: 0 0 0 0.2rem rgba(46, 139, 87, 0.25);
+}
