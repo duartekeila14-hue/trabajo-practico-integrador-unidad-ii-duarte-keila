@@ -3,18 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Carreras | Instituto Politécnico Formosa</title>
-  <meta name="description" content="Oferta académica del Instituto Politécnico Formosa: tecnicaturas superiores, requisitos de inscripción y duración.">
+  <title>Contacto | Instituto Politécnico Formosa</title>
+  <meta name="description" content="Contactate con el Instituto Politécnico Formosa: formulario de consulta, ubicación, horarios y vías de contacto.">
 
+  <!-- 1° Fuentes de Google -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous">
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
+  
   <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="assets/css/carreras.css">
+  <link rel="stylesheet" href="assets/css/contacto.css">
 </head>
 <body>
 
@@ -33,172 +35,168 @@
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
             <li class="nav-item"><a class="nav-link" href="institucional.html">Institucional</a></li>
-            <li class="nav-item"><a class="nav-link active" aria-current="page" href="carreras.html">Carreras</a></li>
-            <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+            <li class="nav-item"><a class="nav-link" href="carreras.html">Carreras</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a></li>
           </ul>
         </div>
       </div>
     </nav>
   </header>
 
-  <section class="page-header-carreras ipf-ribbon">
+  <section class="page-header-contacto ipf-ribbon">
     <div class="container position-relative">
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb mb-2">
           <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Carreras</li>
+          <li class="breadcrumb-item active" aria-current="page">Contacto</li>
         </ol>
       </nav>
-      <h1>Oferta Académica</h1>
-      <p class="lead mb-0" style="color:#dbe3f0;">Cuatro tecnicaturas superiores orientadas a la industria y la tecnología.</p>
+      <h1>Contacto</h1>
+      <p class="lead mb-0" style="color:#dbe3f0;">Escribinos tu consulta o acercate a nuestra sede.</p>
     </div>
   </section>
 
   <main>
-    <!-- ===================== TECNICATURAS (Cards) ===================== -->
+    <!-- ===================== DATOS DE CONTACTO ===================== -->
     <section class="py-5">
       <div class="container">
-        <div class="section-title-wrap">
-          <p class="eyebrow">Tecnicaturas superiores</p>
-          <h2>Nuestras 4 carreras</h2>
-        </div>
         <div class="row g-4">
-
-          <div class="col-md-6 col-lg-3">
-            <article class="card carrera-card quimica p-4">
-              <span class="carrera-tag">Industria</span>
-              <h3 class="h5">Química Industrial</h3>
-              <p class="text-secondary">
-                Forma técnicos capaces de participar en procesos productivos industriales,
-                control de calidad y manejo seguro de sustancias químicas en laboratorio y planta.
-              </p>
-              <div class="carrera-footer">
-                <div><i class="bi bi-clock me-1"></i>Duración: 3 años</div>
-                <div><i class="bi bi-calendar-check me-1"></i>Turno: mañana</div>
+          <div class="col-md-4">
+            <div class="contact-info-card">
+              <div class="contact-icon"><i class="bi bi-geo-alt"></i></div>
+              <div>
+                <h3 class="h6 mb-1">Dirección</h3>
+                <p class="text-secondary mb-0">Ruta Nac. 81 km. 1190 | Formosa</p>
               </div>
-            </article>
+            </div>
           </div>
-
-          <div class="col-md-6 col-lg-3">
-            <article class="card carrera-card mecatronica p-4">
-              <span class="carrera-tag">Automatización</span>
-              <h3 class="h5">Mecatrónica</h3>
-              <p class="text-secondary">
-                Integra mecánica, electrónica e informática para el diseño, mantenimiento
-                y programación de sistemas automatizados y robóticos.
-              </p>
-              <div class="carrera-footer">
-                <div><i class="bi bi-clock me-1"></i>Duración: 3 años</div>
-                <div><i class="bi bi-calendar-check me-1"></i>Turno: noche</div>
+          <div class="col-md-4">
+            <div class="contact-info-card">
+              <div class="contact-icon"><i class="bi bi-envelope"></i></div>
+              <div>
+                <h3 class="h6 mb-1">Correo electrónico</h3>
+                <p class="text-secondary mb-0">info@ipf.edu.ar</p>
               </div>
-            </article>
+            </div>
           </div>
-
-          <div class="col-md-6 col-lg-3">
-            <article class="card carrera-card telecom p-4">
-              <span class="carrera-tag">Comunicaciones</span>
-              <h3 class="h5">Telecomunicaciones</h3>
-              <p class="text-secondary">
-                Prepara técnicos en instalación, configuración y mantenimiento de redes y
-                sistemas de comunicación fijos y móviles.
-              </p>
-              <div class="carrera-footer">
-                <div><i class="bi bi-clock me-1"></i>Duración: 3 años</div>
-                <div><i class="bi bi-calendar-check me-1"></i>Turno: mañana</div>
+          <div class="col-md-4">
+            <div class="contact-info-card">
+              <div class="contact-icon"><i class="bi bi-whatsapp"></i></div>
+              <div>
+                <h3 class="h6 mb-1">WhatsApp</h3>
+                <p class="text-secondary mb-0">3704 860530</p>
               </div>
-            </article>
-          </div>
-
-          <div class="col-md-6 col-lg-3">
-            <article class="card carrera-card software p-4">
-              <span class="carrera-tag">Tecnología</span>
-              <h3 class="h5">Desarrollo de Software Multiplataforma</h3>
-              <p class="text-secondary">
-                Forma desarrolladores capaces de diseñar, programar y mantener aplicaciones
-                web, de escritorio y móviles.
-              </p>
-              <div class="carrera-footer">
-                <div><i class="bi bi-clock me-1"></i>Duración: 2 años</div>
-                <div><i class="bi bi-calendar-check me-1"></i>Turno: mañana</div>
-              </div>
-            </article>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ===================== REQUISITOS DE INSCRIPCIÓN ===================== -->
-    <section class="py-5 bg-white">
-      <div class="container">
-        <div class="row g-5">
-          <div class="col-lg-6">
-            <p class="eyebrow">Antes de inscribirte</p>
-            <h2>Requisitos de inscripción</h2>
-            <ul class="list-unstyled requisitos-list mt-4">
-              <li><i class="bi bi-check-circle-fill"></i>Secundario completo (título en trámite con certificación de la institución de origen).</li>
-              <li><i class="bi bi-check-circle-fill"></i>DNI (original y fotocopia).</li>
-              <li><i class="bi bi-check-circle-fill"></i>Partida de nacimiento actualizada.</li>
-              <li><i class="bi bi-check-circle-fill"></i>2 fotos carnet 4x4.</li>
-              <li><i class="bi bi-check-circle-fill"></i>Ficha de inscripción completa, disponible en Secretaría Académica.</li>
-              <li><i class="bi bi-check-circle-fill"></i>Certificado de aptitud psicofísica.</li>
-            </ul>
-          </div>
-          <div class="col-lg-6">
-            <p class="eyebrow">Planificá tus estudios</p>
-            <h2>Duración de las carreras</h2>
-            <div class="table-responsive mt-4">
-              <table class="table table-duracion align-middle">
-                <thead>
-                  <tr>
-                    <th scope="col">Tecnicatura</th>
-                    <th scope="col">Duración</th>
-                    <th scope="col">Título</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Química Industrial</td>
-                    <td>3 años</td>
-                    <td>Técnico/a Superior</td>
-                  </tr>
-                  <tr>
-                    <td>Mecatrónica</td>
-                    <td>3 años</td>
-                    <td>Técnico/a Superior</td>
-                  </tr>
-                  <tr>
-                    <td>Telecomunicaciones</td>
-                    <td>3 años</td>
-                    <td>Técnico/a Superior</td>
-                  </tr>
-                  <tr>
-                    <td>Desarrollo de Software Multiplataforma</td>
-                    <td>2 años</td>
-                    <td>Técnico/a Superior</td>
-                  </tr>
-                </tbody>
-              </table>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ===================== ALERTA INFORMATIVA (Bootstrap Alert) ===================== -->
-    <section class="pb-5">
+    <!-- ===================== FORMULARIO + MAPA/HORARIOS ===================== -->
+    <section class="py-5 bg-white">
       <div class="container">
-        <div class="alert alert-success d-flex align-items-center" role="alert">
-          <i class="bi bi-info-circle-fill me-2 fs-5"></i>
-          <div>
-            Las fechas de inscripción se publican todos los años en la página de inicio
-            y en nuestras redes institucionales. Ante dudas, escribinos desde la sección de
-            <a href="contacto.html" class="alert-link">Contacto</a>.
+        <div class="row g-5">
+          <!-- Formulario (Bootstrap forms) -->
+          <div class="col-lg-7">
+            <p class="eyebrow">Consultas</p>
+            <h2 class="mb-4">Envianos tu mensaje</h2>
+
+            <form id="formConsulta" class="form-ipf needs-validation" novalidate>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label for="nombre" class="form-label">Nombre y apellido</label>
+                  <input type="text" class="form-control" id="nombre" required>
+                  <div class="invalid-feedback">Por favor ingresá tu nombre.</div>
+                </div>
+                <div class="col-md-6">
+                  <label for="email" class="form-label">Correo electrónico</label>
+                  <input type="email" class="form-control" id="email" required>
+                  <div class="invalid-feedback">Ingresá un correo electrónico válido.</div>
+                </div>
+                <div class="col-md-6">
+                  <label for="telefono" class="form-label">Teléfono (opcional)</label>
+                  <input type="tel" class="form-control" id="telefono">
+                </div>
+                <div class="col-md-6">
+                  <label for="motivo" class="form-label">Motivo de la consulta</label>
+                  <select class="form-select" id="motivo" required>
+                    <option value="" selected disabled>Elegí una opción</option>
+                    <option>Inscripción a una carrera</option>
+                    <option>Información institucional</option>
+                    <option>Equivalencias</option>
+                    <option>Otro</option>
+                  </select>
+                  <div class="invalid-feedback">Seleccioná un motivo de consulta.</div>
+                </div>
+                <div class="col-12">
+                  <label for="mensaje" class="form-label">Mensaje</label>
+                  <textarea class="form-control" id="mensaje" rows="4" required></textarea>
+                  <div class="invalid-feedback">Contanos brevemente tu consulta.</div>
+                </div>
+                <div class="col-12 form-check">
+                  <input type="checkbox" class="form-check-input" id="acepta" required>
+                  <label class="form-check-label" for="acepta">
+                    Acepto ser contactado/a por el Instituto Politécnico Formosa.
+                  </label>
+                  <div class="invalid-feedback">Necesitamos tu aceptación para poder responderte.</div>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-enviar btn-lg px-4">
+                    <i class="bi bi-send me-1"></i> Enviar consulta
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <!-- Mapa y horarios -->
+          <div class="col-lg-5">
+            <p class="eyebrow">Cómo llegar</p>
+            <h2 class="mb-3">Ubicación</h2>
+            <div class="mapa-wrap mb-4">
+              <iframe
+                src="https://www.google.com/maps?q=Ruta%20Nacional%2081%20km%201190%2C%20Formosa%2C%20Argentina&output=embed"
+                loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                title="Ubicación del Instituto Politécnico Formosa"></iframe>
+            </div>
+
+            <p class="eyebrow">Atención</p>
+            <h2 class="mb-3">Horarios</h2>
+            <ul class="list-unstyled horarios-list">
+              <li><span class="dia">Lunes a Viernes</span><span>7:30 a 21:30 hs</span></li>
+              <li><span class="dia">Sábados</span><span>8:00 a 12:00 hs</span></li>
+              <li><span class="dia">Domingos y feriados</span><span>Cerrado</span></li>
+            </ul>
           </div>
         </div>
       </div>
     </section>
   </main>
+
+  <!-- ===================== MODAL DE CONFIRMACIÓN (Bootstrap Modal) ===================== -->
+  <div class="modal fade" id="modalConfirmacion" tabindex="-1" aria-labelledby="modalConfirmacionLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title h5" id="modalConfirmacionLabel">
+            <i class="bi bi-check-circle-fill text-success me-2"></i>¡Consulta enviada!
+          </h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          Gracias por escribirnos. Un/a representante del Instituto Politécnico Formosa
+          se pondrá en contacto a la brevedad.
+          <p class="text-muted small mt-3 mb-0">
+            Nota: este es un formulario de demostración para un trabajo práctico académico;
+            no envía datos a ningún servidor.
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-enviar" data-bs-dismiss="modal">Entendido</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <footer class="footer-ipf">
     <div class="container">
@@ -227,13 +225,33 @@
       </div>
       <hr>
       <div class="d-flex flex-column flex-md-row justify-content-between footer-bottom">
-        <p class="mb-0">&copy; 2026 Instituto Politécnico Formosa. - fines educativos.</p>
+        <p class="mb-0">&copy; 2026 Instituto Politécnico Formosa.- fines educativos.</p>
         
       </div>
     </div>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-          integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+  <!-- Validación y simulación de envío del formulario de consulta -->
+  <script>
+    (function () {
+      'use strict';
+      const form = document.getElementById('formConsulta');
+      form.addEventListener('submit', function (event) {
+        event.preventDefault();
+        event.stopPropagation();
+        if (form.checkValidity()) {
+          const modal = new bootstrap.Modal(document.getElementById('modalConfirmacion'));
+          modal.show();
+          form.reset();
+          form.classList.remove('was-validated');
+        } else {
+          form.classList.add('was-validated');
+        }
+      });
+    })();
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
+
