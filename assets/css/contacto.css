@@ -1,0 +1,101 @@
+.page-header-contacto {
+  background: linear-gradient(120deg, var(--ipf-navy) 0%, var(--ipf-navy-2) 70%);
+  color: #fff;
+  padding: 3.5rem 0;
+}
+
+.page-header-contacto h1 {
+  color: #fff;
+}
+
+/* -------------------- Tarjetas de datos de contacto -------------------- */
+.contact-info-card {
+  background-color: var(--ipf-surface);
+  border-radius: 0.6rem;
+  border: 1px solid var(--ipf-border);
+  padding: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-info-card:hover {
+  border-color: var(--ipf-green);
+  box-shadow: 0 0.6rem 1.2rem rgba(20, 40, 80, 0.08);
+}
+
+.contact-info-card .contact-icon {
+  width: 2.6rem;
+  height: 2.6rem;
+  border-radius: 50%;
+  background-color: rgba(46, 139, 87, 0.14);
+  color: var(--ipf-green-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 1.1rem;
+}
+
+/* -------------------- Formulario -------------------- */
+.form-ipf {
+  background-color: var(--ipf-surface);
+  border-radius: 0.75rem;
+  padding: 2rem;
+  border: 1px solid var(--ipf-border);
+}
+
+.form-ipf .form-label {
+  font-weight: 600;
+  color: var(--ipf-navy);
+}
+
+.form-ipf .form-control:focus,
+.form-ipf .form-select:focus {
+  border-color: var(--ipf-green);
+  box-shadow: 0 0 0 0.2rem rgba(46, 139, 87, 0.2);
+}
+
+.btn-enviar {
+  background-color: var(--ipf-green);
+  border-color: var(--ipf-green);
+  font-weight: 600;
+}
+
+.btn-enviar:hover {
+  background-color: var(--ipf-green-dark);
+  border-color: var(--ipf-green-dark);
+}
+
+/* -------------------- Horarios -------------------- */
+.horarios-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  border-bottom: 1px dashed var(--ipf-border);
+}
+
+.horarios-list li:last-child {
+  border-bottom: none;
+}
+
+.horarios-list .dia {
+  font-weight: 600;
+  color: var(--ipf-navy);
+}
+
+/* -------------------- Mapa -------------------- */
+.mapa-wrap {
+  border-radius: 0.6rem;
+  overflow: hidden;
+  border: 1px solid var(--ipf-border);
+}
+
+.mapa-wrap iframe {
+  width: 100%;
+  height: 320px;
+  border: 0;
+  display: block;
+}
+
