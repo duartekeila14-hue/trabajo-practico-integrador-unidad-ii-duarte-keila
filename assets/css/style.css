@@ -1,0 +1,242 @@
+
+/* -------------------- Paleta de colores institucional -------------------- */
+:root {
+  --ipf-navy: #142850;        
+  --ipf-navy-2: #1f3a63;     
+  --ipf-green: #2e8b57;       
+  --ipf-green-dark: #1f6b44;  
+  --ipf-gold: #c9a227;        
+  --ipf-bg: #f6f7f9;         
+  --ipf-surface: #ffffff;     
+  --ipf-text: #2b2f36;        
+  --ipf-text-muted: #5b6270;  
+  --ipf-border: #e3e6ec;      
+}
+
+/* -------------------- Tipografía -------------------- */
+body {
+  font-family: "Inter", "Segoe UI", sans-serif;
+  color: var(--ipf-text);
+  background-color: var(--ipf-bg);
+}
+
+h1, h2, h3, h4, h5, h6,
+.navbar-brand,
+.display-headline {
+  font-family: "Poppins", "Segoe UI", sans-serif;
+  font-weight: 600;
+  color: var(--ipf-navy);
+}
+
+.eyebrow {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+  color: var(--ipf-green-dark);
+}
+
+a {
+  color: var(--ipf-green-dark);
+}
+
+a:hover {
+  color: var(--ipf-navy);
+}
+
+/* -------------------- Motivo de marca: cinta diagonal --------------------*/
+  
+.ipf-ribbon {
+  position: relative;
+  overflow: hidden;
+}
+
+.ipf-ribbon::after {
+  content: "";
+  position: absolute;
+  top: -40%;
+  right: -10%;
+  width: 55%;
+  height: 220%;
+  background: linear-gradient(135deg, var(--ipf-green) 0%, var(--ipf-green) 35%, transparent 36%),
+              linear-gradient(135deg, var(--ipf-navy-2) 15%, var(--ipf-navy-2) 45%, transparent 46%);
+  transform: rotate(20deg);
+  opacity: 0.9;
+  pointer-events: none;
+}
+
+/* -------------------- Navbar -------------------- */
+.navbar-ipf {
+  background-color: var(--ipf-navy);
+}
+
+.navbar-ipf .navbar-brand,
+.navbar-ipf .nav-link {
+  color: #fff !important;
+  font-weight: 500;
+}
+
+.navbar-ipf .nav-link {
+  transition: color 0.2s ease;
+}
+
+.navbar-ipf .nav-link:hover,
+.navbar-ipf .nav-link.active {
+  color: var(--ipf-gold) !important;
+}
+
+.navbar-ipf .navbar-brand small {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 400;
+  color: #cfd8e6;
+  letter-spacing: 0.05em;
+}
+
+/* -------------------- Hero de inicio -------------------- */
+.hero-ipf {
+  background: linear-gradient(120deg, var(--ipf-navy) 0%, var(--ipf-navy-2) 65%);
+  color: #fff;
+  padding: 5rem 0 6rem;
+}
+
+.hero-ipf .display-headline {
+  color: #fff;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  line-height: 1.15;
+}
+
+.hero-ipf .lead {
+  color: #dbe3f0;
+  max-width: 42rem;
+}
+
+.hero-ipf .btn-hero-primary {
+  background-color: var(--ipf-green);
+  border-color: var(--ipf-green);
+  font-weight: 600;
+}
+
+.hero-ipf .btn-hero-primary:hover {
+  background-color: var(--ipf-green-dark);
+  border-color: var(--ipf-green-dark);
+}
+
+.hero-ipf .btn-hero-outline {
+  border-color: #fff;
+  color: #fff;
+  font-weight: 600;
+}
+
+.hero-ipf .btn-hero-outline:hover {
+  background-color: #fff;
+  color: var(--ipf-navy);
+}
+
+/* -------------------- Carrusel (index) -------------------- */
+#carruselIPF {
+  margin-top: -3rem;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  box-shadow: 0 1.5rem 3rem rgba(20, 40, 80, 0.25);
+}
+
+#carruselIPF .carousel-item {
+  height: 380px;
+}
+
+#carruselIPF .carousel-item img {
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.75);
+}
+
+#carruselIPF .carousel-caption h3 {
+  color: #fff;
+}
+
+/* -------------------- Sección "Por qué elegir el IPF" (Cards) -------------------- */
+.section-title-wrap {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.card-ipf {
+  border: 1px solid var(--ipf-border);
+  border-radius: 0.6rem;
+  height: 100%;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card-ipf:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 1rem 2rem rgba(20, 40, 80, 0.12);
+}
+
+.card-ipf .icon-wrap {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: rgba(46, 139, 87, 0.12);
+  color: var(--ipf-green-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+/* -------------------- Sección de accesos rápidos -------------------- */
+.quicklink-card {
+  background-color: var(--ipf-surface);
+  border-left: 4px solid var(--ipf-green);
+  border-radius: 0.4rem;
+  padding: 1.25rem 1.5rem;
+  height: 100%;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.quicklink-card:hover {
+  background-color: rgba(46, 139, 87, 0.06);
+  border-left-color: var(--ipf-navy);
+}
+
+.quicklink-card a {
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* -------------------- Footer -------------------- */
+.footer-ipf {
+  background-color: var(--ipf-navy);
+  color: #cfd8e6;
+  padding: 3rem 0 1.5rem;
+}
+
+.footer-ipf h6 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  margin-bottom: 1rem;
+}
+
+.footer-ipf a {
+  color: #cfd8e6;
+  text-decoration: none;
+}
+
+.footer-ipf a:hover {
+  color: var(--ipf-gold);
+}
+
+.footer-ipf hr {
+  border-color: rgba(255, 255, 255, 0.15);
+  margin: 2rem 0 1rem;
+}
+
+.footer-ipf .footer-bottom {
+  font-size: 0.85rem;
+  color: #9fadc6;
+}
