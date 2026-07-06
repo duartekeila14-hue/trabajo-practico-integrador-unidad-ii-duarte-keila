@@ -1,0 +1,88 @@
+
+CARRERAS CSS
+
+.page-header-carreras {
+  background: linear-gradient(120deg, var(--ipf-navy) 0%, var(--ipf-navy-2) 70%);
+  color: #fff;
+  padding: 3.5rem 0;
+}
+
+.page-header-carreras h1 {
+  color: #fff;
+}
+
+/* -------------------- Cards de tecnicaturas -------------------- */
+.carrera-card {
+  background-color: var(--ipf-surface);
+  border-radius: 0.6rem;
+  border: 1px solid var(--ipf-border);
+  overflow: hidden;
+  height: 100%;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.carrera-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 1rem 2rem rgba(20, 40, 80, 0.12);
+}
+
+.carrera-card .carrera-tag {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 0.3rem 0.7rem;
+  border-radius: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.carrera-card.quimica .carrera-tag {
+  background-color: rgba(201, 162, 39, 0.18);
+  color: #8a6d16;
+}
+
+.carrera-card.mecatronica .carrera-tag {
+  background-color: rgba(20, 40, 80, 0.12);
+  color: var(--ipf-navy);
+}
+
+.carrera-card.telecom .carrera-tag {
+  background-color: rgba(46, 139, 87, 0.15);
+  color: var(--ipf-green-dark);
+}
+
+.carrera-card.software .carrera-tag {
+  background-color: rgba(31, 58, 99, 0.15);
+  color: var(--ipf-navy-2);
+}
+
+.carrera-card .carrera-footer {
+  border-top: 1px solid var(--ipf-border);
+  padding-top: 0.75rem;
+  margin-top: 1rem;
+  font-size: 0.88rem;
+  color: var(--ipf-text-muted);
+}
+
+/* -------------------- Tabla de duración -------------------- */
+.table-duracion thead {
+  background-color: var(--ipf-navy);
+  color: #fff;
+}
+
+.table-duracion tbody tr:hover {
+  background-color: rgba(46, 139, 87, 0.07);
+}
+
+/* -------------------- Requisitos (lista con check) -------------------- */
+.requisitos-list li {
+  padding-left: 0.25rem;
+  margin-bottom: 0.6rem;
+}
+
+.requisitos-list .bi,
+.requisitos-list i {
+  color: var(--ipf-green-dark);
+  margin-right: 0.5rem;
+}
