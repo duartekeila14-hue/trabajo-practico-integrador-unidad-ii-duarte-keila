@@ -1,179 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carreras | Instituto Politécnico Formosa</title>
-  <meta name="description" content="Oferta académica del Instituto Politécnico Formosa: tecnicaturas superiores, requisitos de inscripción y duración.">
+    <meta name="description"
+        content="Oferta académica del Instituto Politécnico Formosa: tecnicaturas superiores, requisitos de inscripción y duración.">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="assets/css/carreras.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/carreras.css">
 </head>
+
 <body>
     <header>
-    <nav class="navbar navbar-expand-lg navbar-ipf sticky-top">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">
-          IPF
-          <small>Instituto Politécnico Formosa</small>
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
-                aria-controls="navMenu" aria-expanded="false" aria-label="Abrir menú">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navMenu">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-            <li class="nav-item"><a class="nav-link" href="institucional.html">Institucional</a></li>
-            <li class="nav-item"><a class="nav-link active" aria-current="page" href="carreras.html">Carreras</a></li>
-            <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
-          </ul>
+        <nav class="navbar navbar-expand-lg navbar-ipf sticky-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    IPF
+                    <small>Instituto Politécnico Formosa</small>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+                    aria-controls="navMenu" aria-expanded="false" aria-label="Abrir menú">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navMenu">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="institucional.html">Institucional</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page"
+                                href="carreras.html">Carreras</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="page-header-carreras ipf-ribbon">
+        <div class="container position-relative">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb mb-2">
+                    <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Carreras</li>
+                </ol>
+            </nav>
+            <h1>Oferta Académica</h1>
+            <p class="lead mb-0" style="color:#dbe3f0;">Cuatro tecnicaturas superiores orientadas a la industria y la
+                tecnología.</p>
         </div>
-      </div>
-    </nav>
-  </header>
-<section class="page-header-carreras ipf-ribbon">
-    <div class="container position-relative">
-      <nav aria-label="breadcrumb">
-        <ol class="breadcrumb mb-2">
-          <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Carreras</li>
-        </ol>
-      </nav>
-      <h1>Oferta Académica</h1>
-      <p class="lead mb-0" style="color:#dbe3f0;">Cuatro tecnicaturas superiores orientadas a la industria y la tecnología.</p>
-    </div>
-  </section>
-
-  <main>
-    <!-- ===================== TECNICATURAS (Cards) ===================== -->
-    <section class="py-5">
-      <div class="container">
-        <div class="section-title-wrap">
-          <p class="eyebrow">Tecnicaturas superiores</p>
-          <h2>Nuestras 4 carreras</h2>
-        </div>
-        <div class="row g-4">
-
-          <div class="col-md-6 col-lg-3">
-            <article class="card carrera-card quimica p-4">
-              <span class="carrera-tag">Industria</span>
-              <h3 class="h5">Química Industrial</h3>
-              <p class="text-secondary">
-                Forma técnicos capaces de participar en procesos productivos industriales,
-                control de calidad y manejo seguro de sustancias químicas en laboratorio y planta.
-              </p>
-              <div class="carrera-footer">
-                <div><i class="bi bi-clock me-1"></i>Duración: 3 años</div>
-                <div><i class="bi bi-calendar-check me-1"></i>Turno: mañana y tarde</div>
-              </div>
-            </article>
-          </div>
-
-          <div class="col-md-6 col-lg-3">
-            <article class="card carrera-card mecatronica p-4">
-              <span class="carrera-tag">Automatización</span>
-              <h3 class="h5">Mecatrónica</h3>
-              <p class="text-secondary">
-                Integra mecánica, electrónica e informática para el diseño, mantenimiento
-                y programación de sistemas automatizados y robóticos.
-              </p>
-              <div class="carrera-footer">
-                <div><i class="bi bi-clock me-1"></i>Duración: 3 años</div>
-                <div><i class="bi bi-calendar-check me-1"></i>Turno: noche</div>
-              </div>
-            </article>
-          </div>
-
-          <div class="col-md-6 col-lg-3">
-            <article class="card carrera-card telecom p-4">
-              <span class="carrera-tag">Comunicaciones</span>
-              <h3 class="h5">Telecomunicaciones</h3>
-              <p class="text-secondary">
-                Prepara técnicos en instalación, configuración y mantenimiento de redes y
-                sistemas de comunicación fijos y móviles.
-              </p>
-              <div class="carrera-footer">
-                <div><i class="bi bi-clock me-1"></i>Duración: 3 años</div>
-                <div><i class="bi bi-calendar-check me-1"></i>Turno: mañana y tarde</div>
-              </div>
-            </article>
-          </div>
-
-          <div class="col-md-6 col-lg-3">
-            <article class="card carrera-card software p-4">
-              <span class="carrera-tag">Tecnología</span>
-              <h3 class="h5">Desarrollo de Software Multiplataforma</h3>
-              <p class="text-secondary">
-                Forma desarrolladores capaces de diseñar, programar y mantener aplicaciones
-                web, de escritorio y móviles.
-              </p>
-              <div class="carrera-footer">
-                <div><i class="bi bi-clock me-1"></i>Duración: 2 años</div>
-                <div><i class="bi bi-calendar-check me-1"></i>Turno: mañana y tarde</div>
-              </div>
-            </article>
-          </div>
-
-        </div>
-      </div>
     </section>
-     <!-- ===================== ALERTA INFORMATIVA (Bootstrap Alert) ===================== -->
-    <section class="pb-5">
-      <div class="container">
-        <div class="alert alert-success d-flex align-items-center" role="alert">
-          <i class="bi bi-info-circle-fill me-2 fs-5"></i>
-          <div>
-            Las fechas de inscripción se publican todos los años en la página de inicio
-            y en nuestras redes institucionales. Ante dudas, escribinos desde la sección de
-            <a href="contacto.html" class="alert-link">Contacto</a>.
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
 
-  <footer class="footer-ipf">
-    <div class="container">
-      <div class="row g-4">
-        <div class="col-lg-4">
-          <h6>Instituto Politécnico Formosa</h6>
-          <p class="mb-0">Formación técnica superior al servicio del desarrollo productivo de Formosa.</p>
+    <main>
+        <!-- ===================== TECNICATURAS (Cards) ===================== -->
+        <section class="py-5">
+            <div class="container">
+                <div class="section-title-wrap">
+                    <p class="eyebrow">Tecnicaturas superiores</p>
+                    <h2>Nuestras 4 carreras</h2>
+                </div>
+                <div class="row g-4">
+
+                    <div class="col-md-6 col-lg-3">
+                        <article class="card carrera-card quimica p-4">
+                            <span class="carrera-tag">Industria</span>
+                            <h3 class="h5">Química Industrial</h3>
+                            <p class="text-secondary">
+                                Forma técnicos capaces de participar en procesos productivos industriales,
+                                control de calidad y manejo seguro de sustancias químicas en laboratorio y planta.
+                            </p>
+                            <div class="carrera-footer">
+                                <div><i class="bi bi-clock me-1"></i>Duración: 3 años</div>
+                                <div><i class="bi bi-calendar-check me-1"></i>Turno: mañana y tarde</div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3">
+                        <article class="card carrera-card mecatronica p-4">
+                            <span class="carrera-tag">Automatización</span>
+                            <h3 class="h5">Mecatrónica</h3>
+                            <p class="text-secondary">
+                                Integra mecánica, electrónica e informática para el diseño, mantenimiento
+                                y programación de sistemas automatizados y robóticos.
+                            </p>
+                            <div class="carrera-footer">
+                                <div><i class="bi bi-clock me-1"></i>Duración: 3 años</div>
+                                <div><i class="bi bi-calendar-check me-1"></i>Turno: noche</div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3">
+                        <article class="card carrera-card telecom p-4">
+                            <span class="carrera-tag">Comunicaciones</span>
+                            <h3 class="h5">Telecomunicaciones</h3>
+                            <p class="text-secondary">
+                                Prepara técnicos en instalación, configuración y mantenimiento de redes y
+                                sistemas de comunicación fijos y móviles.
+                            </p>
+                            <div class="carrera-footer">
+                                <div><i class="bi bi-clock me-1"></i>Duración: 3 años</div>
+                                <div><i class="bi bi-calendar-check me-1"></i>Turno: mañana y tarde</div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3">
+                        <article class="card carrera-card software p-4">
+                            <span class="carrera-tag">Tecnología</span>
+                            <h3 class="h5">Desarrollo de Software Multiplataforma</h3>
+                            <p class="text-secondary">
+                                Forma desarrolladores capaces de diseñar, programar y mantener aplicaciones
+                                web, de escritorio y móviles.
+                            </p>
+                            <div class="carrera-footer">
+                                <div><i class="bi bi-clock me-1"></i>Duración: 2 años</div>
+                                <div><i class="bi bi-calendar-check me-1"></i>Turno: mañana y tarde</div>
+                            </div>
+                        </article>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- ===================== ALERTA INFORMATIVA (Bootstrap Alert) ===================== -->
+        <section class="pb-5">
+            <div class="container">
+                <div class="alert alert-success d-flex align-items-center" role="alert">
+                    <i class="bi bi-info-circle-fill me-2 fs-5"></i>
+                    <div>
+                        Las fechas de inscripción se publican todos los años en la página de inicio
+                        y en nuestras redes institucionales. Ante dudas, escribinos desde la sección de
+                        <a href="contacto.html" class="alert-link">Contacto</a>.
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-ipf">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h6>Instituto Politécnico Formosa</h6>
+                    <p class="mb-0">Formación técnica superior al servicio del desarrollo productivo de Formosa.</p>
+                </div>
+                <div class="col-lg-4">
+                    <h6>Navegación</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="institucional.html">Institucional</a></li>
+                        <li><a href="carreras.html">Carreras</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h6>Contacto</h6>
+                    <ul class="list-unstyled mb-0">
+                        <li><i class="bi bi-geo-alt me-2"></i>Ruta Nac. 81 km. 1190, Formosa</li>
+                        <li><i class="bi bi-envelope me-2"></i>info@ipf.edu.ar</li>
+                        <li><i class="bi bi-whatsapp me-2"></i>3704 860530</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="d-flex flex-column flex-md-row justify-content-between footer-bottom">
+                <p class="mb-0">&copy; 2026 Instituto Politécnico Formosa. Trabajo Práctico Integrador II - fines
+                    educativos.</p>
+                <p class="mb-0">Desarrollado con HTML, CSS y Bootstrap.</p>
+            </div>
         </div>
-        <div class="col-lg-4">
-          <h6>Navegación</h6>
-          <ul class="list-unstyled">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="institucional.html">Institucional</a></li>
-            <li><a href="carreras.html">Carreras</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-          </ul>
-        </div>
-        <div class="col-lg-4">
-          <h6>Contacto</h6>
-          <ul class="list-unstyled mb-0">
-            <li><i class="bi bi-geo-alt me-2"></i>Ruta Nac. 81 km. 1190, Formosa</li>
-            <li><i class="bi bi-envelope me-2"></i>info@ipf.edu.ar</li>
-            <li><i class="bi bi-whatsapp me-2"></i>3704 860530</li>
-          </ul>
-        </div>
-      </div>
-      <hr>
-      <div class="d-flex flex-column flex-md-row justify-content-between footer-bottom">
-        <p class="mb-0">&copy; 2026 Instituto Politécnico Formosa. Trabajo Práctico Integrador II - fines educativos.</p>
-        <p class="mb-0">Desarrollado con HTML, CSS y Bootstrap.</p>
-      </div>
-    </div>
-  </footer>
+    </footer>
 
 
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
